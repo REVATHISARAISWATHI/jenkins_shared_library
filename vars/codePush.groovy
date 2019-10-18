@@ -13,14 +13,12 @@
  codePush(String data){
     def jsonSlurper = new JsonSlurper() 
     def resultJson = jsonSlurper.parseText(data)
- }
+ }*/
               
               
  def call(){
   def request = libraryResource 'data.json'
-  def proc = "cd ~/
-              mkdir code
-              cd code
+  def proc = "
               //git clone https://github.com/amanchourasia/JenkinsWar.git".execute()
                 ["git", "clone", "https://github.com/amanchourasia/JenkinsWar.git"]".execute()
    def b = new StringBuffer()
@@ -29,9 +27,9 @@
    println proc.text
    println b.toString()
  //codePush(request)
- }*/
+ }
 
-def call(){
+/*def call(){
 def sout = new StringBuffer(), serr = new StringBuffer()
 
 def proc ='../resources/codePush.sh'.execute()
@@ -39,4 +37,4 @@ def proc ='../resources/codePush.sh'.execute()
 //proc.consumeProcessOutput(sout, serr)
 //proc.waitForOrKill(1000)
 println sout
-}
+}*/
