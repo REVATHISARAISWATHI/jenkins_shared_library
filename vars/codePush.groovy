@@ -28,9 +28,9 @@ import hudson.plugin.git.extension.impl.*
  def link2 = "git clone http://rig:${rig_password}@${BB_URL}/scm/DEM/app.git"
  def link3 = "cp -r ./JenkinsWar/* ./app"
  def link4 = "cd app/*"
- def link5 = "pwd"
- /*def link5 = "git init"
- def link6 = "git add --all"
+ //def link5 = "pwd"
+ def link5 = "git init"
+ /*def link6 = "git add --all"
  def link7 = "git commit -m "initial commit""
  def link8 = "git push -u origin master"*/
    echo "************** Aman Repo ************"
