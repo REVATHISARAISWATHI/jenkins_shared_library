@@ -1,3 +1,6 @@
+import.hudson.plugin.git.GitSCM
+import.hudson.plugin.git.extension.impl.*
+
 /*sh label: '', script: '''rm -rf ./* && git clone https://github.com/amanchourasia/JenkinsWar.git
                 git clone http://rig:${rig_password}@${BB_URL}/scm/DEM/app.git
                 cp -r ./JenkinsWar/* ./app
