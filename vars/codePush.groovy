@@ -27,7 +27,7 @@ import hudson.plugin.git.extension.impl.*
  def link1 = "rm -rf ./* && git clone https://github.com/amanchourasia/JenkinsWar.git"
  def link2 = "git clone http://rig:${rig_password}@${BB_URL}/scm/DEM/app.git"
  def link3 = "cp -r ./JenkinsWar/* ./app"
- def link4 = "pwd && cd app && pwd && git init && git add --all"
+ def link4 = "pwd && cd app && pwd && git init && git add --all && git status"
  //def link5 = "pwd"
  def link5 = "git init"
  /*def link6 = "git add --all"
