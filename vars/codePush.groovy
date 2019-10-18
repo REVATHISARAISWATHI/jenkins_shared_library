@@ -43,11 +43,11 @@ println sout
 }*/
 
 
-def call() {
+def call(Map stageParams) {
  
     checkout([
         $class: 'GitSCM',
-        branches: [[name:  master ]],
+        branches: [[name:  stageParams.branch ]],
         userRemoteConfigs: [[ url: 'https://github.com/amanchourasia/JenkinsWar.git' ]]
     ])
   }
