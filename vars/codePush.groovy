@@ -24,10 +24,12 @@ import hudson.plugin.git.extension.impl.*
  def call(){
   def request = libraryResource 'data.json'
   //def del = "rm -rf JenkinsWar" 
- def link = "rm -rf ./* && git clone https://github.com/amanchourasia/JenkinsWar.git"
+ def link1 = "rm -rf ./* && git clone https://github.com/amanchourasia/JenkinsWar.git"
+ def link2 = "git clone http://{rig}:{rigaDapt@devOps}@18.224.68.30:7990/scm/DEM/app.git"
    echo "************** Aman Repo ************"
    //sh(del)
-   sh(link)
+   sh(link1)
+   sh(link2)
     }               
    /*def b = new StringBuffer()
    proc.consumeProcessErrorStream(b)
