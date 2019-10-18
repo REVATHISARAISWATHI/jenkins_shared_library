@@ -25,7 +25,7 @@ import hudson.plugin.git.extension.impl.*
   def request = libraryResource 'data.json'
   //def del = "rm -rf JenkinsWar" 
  def link1 = "rm -rf ./* && git clone https://github.com/amanchourasia/JenkinsWar.git"
- def link2 = "git clone http://rig:rigaDapt%40devOps@18.224.68.30:7990/scm/DEM/app.git"
+ def link2 = "git clone http://rig:${rig_password}@${BB_URL}/scm/DEM/app.git"
    echo "************** Aman Repo ************"
    //sh(del)
    sh(link1)
