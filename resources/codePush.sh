@@ -1,6 +1,5 @@
 #!/usr/bin/bash
-exec 1>/tmp/test
-echo "Test redirect********************************"
+
 git clone https://github.com/amanchourasia/JenkinsWar.git
 git clone http://{rig}:{rigaDapt@devOps}@18.224.68.30:7990/scm/DEM/app.git
 cp -r ./JenkinsWar/* ./app
