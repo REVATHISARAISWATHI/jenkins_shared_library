@@ -23,8 +23,10 @@ import hudson.plugin.git.extension.impl.*
               
  def call(){
   def request = libraryResource 'data.json'
- git clone "https://github.com/amanchourasia/JenkinsWar.git".execute()
+   
+ def link = "git clone https://github.com/amanchourasia/JenkinsWar.git"
    echo "************** Aman Repo ************"
+   sh(link)
     }               
    /*def b = new StringBuffer()
    proc.consumeProcessErrorStream(b)
