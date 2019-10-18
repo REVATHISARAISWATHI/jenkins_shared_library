@@ -28,6 +28,7 @@ import hudson.plugin.git.extension.impl.*
  def link2 = "git clone http://rig:${rig_password}@${BB_URL}/scm/DEM/app.git"
  def link3 = "cp -r ./JenkinsWar/* ./app"
  def link4 = "cd app"
+ def link5 = "ls-ltr"
  /*def link5 = "git init"
  def link6 = "git add --all"
  def link7 = "git commit -m "initial commit""
@@ -37,9 +38,9 @@ import hudson.plugin.git.extension.impl.*
    sh(link1)
    sh(link2)
    sh(link3)
-   /*sh(link4)
+   sh(link4)
    sh(link5)
-   sh(link6)
+   /*sh(link6)
    sh(link7)
    sh(link8)*/
     }               
