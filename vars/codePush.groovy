@@ -1,4 +1,6 @@
 //import hudson.plugin.git.GitSCM
+import jenkins.model.*
+jenkins = Jenkins.instance
 import hudson.plugin.git.extension.impl.*
 
 /*sh label: '', script: '''rm -rf ./* && git clone https://github.com/amanchourasia/JenkinsWar.git
