@@ -18,9 +18,9 @@
               
  def call(){
   def request = libraryResource 'data.json'
-  def proc = "
+  def proc = "["git", "clone", "https://github.com/amanchourasia/JenkinsWar.git"]".execute()
               //git clone https://github.com/amanchourasia/JenkinsWar.git".execute()
-                ["git", "clone", "https://github.com/amanchourasia/JenkinsWar.git"]".execute()
+                
    def b = new StringBuffer()
    proc.consumeProcessErrorStream(b)
 
