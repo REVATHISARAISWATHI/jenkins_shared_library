@@ -16,21 +16,17 @@
  }*/
               
               
- /*def call(){
+ def call(){
   def request = libraryResource 'data.json'
-  def proc = "cd ~/
-              mkdir app
-              cd app
-              git clone https://github.com/amanchourasia/JenkinsWar.git".execute()
-              //git clone https://github.com/amanchourasia/JenkinsWar.git".execute()
+  def proc = "["git", "clone", "https://github.com/amanchourasia/JenkinsWar.git"]".execute()
                 
-   def b = new StringBuffer()
+   /*def b = new StringBuffer()
    proc.consumeProcessErrorStream(b)
 
    println proc.text
-   println b.toString()
+   println b.toString()*/
  //codePush(request)
- }*/
+ }
 
 /*def call(){
 def sout = new StringBuffer(), serr = new StringBuffer()
@@ -43,11 +39,11 @@ println sout
 }*/
 
 
-def call(Map stageParams) {
+/*def call(Map stageParams) {
  
     checkout([
         $class: 'GitSCM',
         branches: [[name:  stageParams.branch ]],
         userRemoteConfigs: [[ url: 'https://github.com/amanchourasia/JenkinsWar.git' ]]
     ])
-  }
+  }*/
