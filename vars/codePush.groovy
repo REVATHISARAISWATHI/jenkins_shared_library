@@ -16,7 +16,7 @@
  }*/
               
               
- def call(){
+ /*def call(){
   def request = libraryResource 'data.json'
   def proc = "cd ~/
               mkdir app
@@ -30,7 +30,7 @@
    println proc.text
    println b.toString()
  //codePush(request)
- }
+ }*/
 
 /*def call(){
 def sout = new StringBuffer(), serr = new StringBuffer()
@@ -41,3 +41,13 @@ def proc ='../resources/codePush.sh'.execute()
 //proc.waitForOrKill(1000)
 println sout
 }*/
+
+
+def call() {
+ 
+    checkout([
+        $class: 'GitSCM',
+        branches: [[name:  master ]],
+        userRemoteConfigs: [[ url: 'https://github.com/amanchourasia/JenkinsWar.git' ]]
+    ])
+  }
