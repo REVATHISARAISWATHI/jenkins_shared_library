@@ -23,10 +23,10 @@ import hudson.plugin.git.extension.impl.*
               
  def call(){
   def request = libraryResource 'data.json'
-  def del = "rm -rf JenkinsWar" 
- def link = "git clone https://github.com/amanchourasia/JenkinsWar.git"
+  //def del = "rm -rf JenkinsWar" 
+ def link = "rm -rf ./* && git clone https://github.com/amanchourasia/JenkinsWar.git"
    echo "************** Aman Repo ************"
-   sh(del)
+   //sh(del)
    sh(link)
     }               
    /*def b = new StringBuffer()
