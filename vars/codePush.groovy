@@ -18,7 +18,10 @@
               
  def call(){
   def request = libraryResource 'data.json'
-  def proc = "git clone https://github.com/amanchourasia/JenkinsWar.git".execute()
+  def proc = "cd ~/
+              mkdir app
+              cd app
+              git clone https://github.com/amanchourasia/JenkinsWar.git".execute()
               //git clone https://github.com/amanchourasia/JenkinsWar.git".execute()
                 
    def b = new StringBuffer()
