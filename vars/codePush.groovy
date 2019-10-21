@@ -21,10 +21,10 @@ import hudson.plugin.git.extension.impl.*
   
    echo "************** Aman Repo ************"
    
-   sh(link1)
-   sh(link2)
-   sh(link3)
-   sh(link4)
+   sh(link1,link2)
+   //sh(link2)
+   //sh(link3)
+  // sh(link4)
     
   }
 
