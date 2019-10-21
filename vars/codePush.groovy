@@ -51,6 +51,6 @@ import hudson.plugin.git.extension.impl.*
    sh(link3)
    sh(link4)
    
- codePush(request)
+ //codePush(request)
  }               
    
