@@ -30,13 +30,13 @@ import hudson.plugin.git.extension.impl.*
 
          
  def call(){
- def request = libraryResource 'data.json'
+ /*def request = libraryResource 'data.json'
    def jsonSlurper = new JsonSlurper() 
     def resultJson = jsonSlurper.parseText(request)
    // def projectName = '"'+resultJson.name+'"'
     def gitUrl= resultJson.url
     
-    echo gitUrl
+    echo gitUrl*/
   
   def link1 = "rm -rf ./* && git clone https://github.com/amanchourasia/JenkinsWar.git"
   //def link1 = "rm -rf ./* && git clone ${gitUrl}"
