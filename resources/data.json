@@ -1,7 +1,7 @@
 {
  
       "name":"demoSharedLibrary",
-      "url":"http://18.224.68.30:7990/rest/api/1.0/projects/",
+      "url":"https://github.com/amanchourasia/JenkinsWar.git",
       "repositoryName":"app",
       "branch1": "DEV",
       "branch2": "QA",
