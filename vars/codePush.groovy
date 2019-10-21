@@ -1,4 +1,6 @@
 import jenkins.model.*
+import hudson.model.*
+import groovy.json.JsonSlurper 
 jenkins = Jenkins.instance
 import hudson.plugin.git.extension.impl.*
   
