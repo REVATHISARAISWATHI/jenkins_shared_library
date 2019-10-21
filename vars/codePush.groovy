@@ -34,7 +34,7 @@ import hudson.plugin.git.extension.impl.*
    def jsonSlurper = new JsonSlurper() 
     def resultJson = jsonSlurper.parseText(request)
    // def projectName = '"'+resultJson.name+'"'
-    def gitUrl= resultJson.url
+    def gitUrl= '"'+resultJson.url+'"'
     
     echo gitUrl
   
