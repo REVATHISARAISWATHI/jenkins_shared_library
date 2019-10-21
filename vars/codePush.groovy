@@ -14,17 +14,17 @@ import hudson.plugin.git.extension.impl.*
     echo gitUrl
   
   //def link1 = "rm -rf ./* && git clone https://github.com/amanchourasia/JenkinsWar.git"
-  def link1 = "rm -rf ./* && git clone ${gitUrl} && git clone http://rig:${rig_password}@${BB_URL}/scm/DEM/app.git"
+  def link1 = "rm -rf ./* && git clone ${gitUrl} && git clone http://rig:${rig_password}@${BB_URL}/scm/DEM/app.git && cp -r ./JenkinsWar/* ./app && pwd && cd app && pwd && git init && git add --all && git status && git commit -m 'commit' && git push -u origin master"
   //def link2 = "git clone http://rig:${rig_password}@${BB_URL}/scm/DEM/app.git"
-  def link3 = "cp -r ./JenkinsWar/* ./app"
-  def link4 = "pwd && cd app && pwd && git init && git add --all && git status && git commit -m 'commit' && git push -u origin master"
+  //def link3 = "cp -r ./JenkinsWar/* ./app"
+  //def link4 = "pwd && cd app && pwd && git init && git add --all && git status && git commit -m 'commit' && git push -u origin master"
   
    echo "************** Aman Repo ************"
    
    sh(link1)
    //sh(link2)
-   sh(link3)
-   sh(link4)
+   //sh(link3)
+   //sh(link4)
     
   }
 
