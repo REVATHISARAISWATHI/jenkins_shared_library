@@ -4,8 +4,8 @@ import groovy.json.JsonSlurper
 jenkins = Jenkins.instance
 import hudson.plugin.git.extension.impl.*
   
- /* @NonCPS
-  codePush(String data){
+  @NonCPS
+  codePush(String data, String BB_URL){
     def jsonSlurper = new JsonSlurper() 
     def resultJson = jsonSlurper.parseText(data)
    // def projectName = '"'+resultJson.name+'"'
@@ -26,12 +26,12 @@ import hudson.plugin.git.extension.impl.*
    sh(link3)
    sh(link4)
     
-  }*/
+  }
 
          
- def call(){
+ def call(String BITBUCKETURL){
  def request = libraryResource 'data.json'
-   def jsonSlurper = new JsonSlurper() 
+   /*def jsonSlurper = new JsonSlurper() 
     def resultJson = jsonSlurper.parseText(request)
    // def projectName = '"'+resultJson.name+'"'
     def gitUrl= '"'+resultJson.url+'"'
@@ -49,7 +49,8 @@ import hudson.plugin.git.extension.impl.*
    sh(link1)
    sh(link2)
    sh(link3)
-   sh(link4)
- //codePush(request)
+   sh(link4)*/
+   
+ codePush(request,BITBUCKETURL)
  }               
    
